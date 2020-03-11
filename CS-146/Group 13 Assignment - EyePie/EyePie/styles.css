@@ -1,0 +1,417 @@
+/*I pledge my Honor that I have abided by the Stevens Honor System.*/
+
+body {
+    background-color: #F2EDD8;
+}
+
+header div {
+    background-color: #004C70;
+    align-items: center;
+    /*padding-top: 20px;
+	padding-bottom: 20px;*/
+}
+
+header h1 {
+    margin: 0px;
+    color: white;
+    font-family: "Arial Black";
+}
+
+header span {
+    margin: 0px;
+    color: white;
+    font-family: "Lucida Sans Unicode";
+}
+
+#selectionList ul li {
+    display: inline;
+    padding-right: 90px;
+    padding-left: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+#selectionList ul li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#selectionList ul li a:visited {
+    color: white;
+}
+
+#selectionList ul li a:hover {
+    color: red;
+}
+
+.pizzaAd {
+    margin: 50px 20%;
+    padding: 10px;
+    background-color: #44B3C2;
+    height: 400px;
+    display: flex;
+    background-position: center;
+    background-image: url("pizzaAd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 10px 10px 5px grey;
+    position: relative;
+    text-shadow: 0px 2px 5px #000000;
+}
+
+.picText {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    margin: 0px;
+    color: white;
+}
+
+.ad-pic {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo {
+    padding: 5px;
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.ads {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ad {
+    flex: auto;
+}
+
+.ad-body {
+    margin-left: 2.5%;
+}
+
+.ad-body p {
+    font-family: "Arial";
+}
+
+.ad-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 6px grey;
+}
+
+#pageSelectionWrapper {
+    text-align: center;
+    margin: -10px;
+    background-color: #326f8c;
+}
+
+#selectionList {
+    display: inline-block;
+    background-color: #326f8c;
+}
+
+#logoTagline {
+    display: flex;
+    align-items: center;
+    /*padding-top: 20px;
+	padding-bottom: 20px;*/
+    margin: -10px;
+}
+
+#Menu {
+    margin: 50px 20%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    background-color: ivory;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 10px 10px 5px grey;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuItem p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mission {
+    margin: 50px 20px 50px 20px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    background-color: ivory;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 10px 10px 5px grey;
+    flex-direction: column;
+}
+
+#aboutUs {
+    display: flex;
+    flex-direction: row;
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.founder img {
+    align-self: center;
+    padding: 5px;
+}
+
+.founder figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+#Orders {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.OrderItem {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border: 5px solid black;
+    font-size: 30px;
+
+}
+
+#OrderPizza {
+
+    background-color: yellow;
+
+}
+
+#OrderPizza:active{
+
+    background-color: red;
+
+}
+
+#OrderSalad {
+
+    background-color: green;
+
+}
+
+#OrderSalad:active{
+
+    background-color: red;
+
+}
+
+#OrderSide {
+
+    background-color: lightblue;
+
+}
+
+#OrderSide:active{
+
+    background-color: red;
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 999px) {
+    .ads {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
+        align-items: center;
+    }
+    .ad {
+        max-width: 800px;
+        width: 800px;
+        flex: auto;
+    }
+    /*.ad-pic {
+		height: 200px;
+		width: 200px;
+		margin-right: 10px;
+	}*/
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 998px) and (min-width: 400px) {
+    header {
+        justify-content: center;
+    }
+    .ads {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ad {
+        flex: 50%;
+    }
+    .ad-pic {
+        width: 95%;
+        height: auto;
+    }
+    .ad-body p {
+        white-space: normal;
+    }
+    .logo {
+        padding: 5px;
+        margin: 10px;
+        height: 100px;
+        width: 100px;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+    }
+    .ad-container {
+        margin: 10px 5%;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #selectionList ul li {
+        display: block;
+        font-size: 30px;
+    }
+    .ad {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 200px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #selectionList ul {
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #selectionList ul li {
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        list-style: none;
+    }
+    #aboutUs {
+        flex-direction: column;
+    }
+    #mission {
+        margin: 50px 20px;
+    }
+}
+
+
+/*PHONE*/
+
+@media screen and (max-width: 399px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    div h1 {
+        margin-bottom: -10px;
+    }
+    .picText {
+        font-size: 0px;
+    }
+    .logo {
+        border-radius: 50%;
+    }
+    .ads {
+        flex: auto;
+        flex-direction: column;
+        /*margin: 10%;*/
+    }
+    .ad-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .ad-pic {
+        width: 90%;
+        height: auto;
+    }
+    .ad {
+        margin: 10px;
+        padding: 10px;
+        background-color: #44B3C2;
+        height: 200px;
+        display: flex;
+    }
+    #selectionList ul {
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #selectionList ul li {
+        display: block;
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        list-style: none;
+    }
+    #aboutUs {
+        flex-direction: column;
+    }
+    #mission {
+        margin: 50px 20px;
+    }
+    #tag {
+        font-size: 0px;
+    }
+}

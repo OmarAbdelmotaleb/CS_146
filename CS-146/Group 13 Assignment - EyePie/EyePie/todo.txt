@@ -1,0 +1,12 @@
+Simple todo list
+If you finish something on this list, delete it
+If there is something you think needs to be done still, add it
+
+
+Finish aboutUs.html
+Improve css for aboutUs
+Create and test more responsive css
+Remove leftover rules from the copied skeleton assignment
+Clean up index.html to remove skeleton remains
+Finish index.html to add more things for a homepage
+Start placeOrder.html - Don't do javascript, but a shell should be there for when we do implement implement

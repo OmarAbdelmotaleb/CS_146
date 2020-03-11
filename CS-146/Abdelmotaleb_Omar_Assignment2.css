@@ -1,0 +1,213 @@
+/*
+   ____                                        _      ____   ____    ____  
+  / ___|   ___   _ __     ___   _ __    __ _  | |    / ___| / ___|  / ___| 
+ | |  _   / _ \ | '_ \   / _ \ | '__|  / _` | | |   | |     \___ \  \___ \ 
+ | |_| | |  __/ | | | | |  __/ | |    | (_| | | |   | |___   ___) |  ___) |
+  \____|  \___| |_| |_|  \___| |_|     \__,_| |_|    \____| |____/  |____/ 
+*/
+
+body{
+    
+    background-color: #eee;
+
+}
+
+header{
+
+    background-color: #49516f;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+header h1{
+
+    margin: 0px;
+    color: white;
+
+}
+
+header span{
+
+    margin: 0px;
+    color: white;
+
+}
+
+.logo{
+
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+
+}
+
+.posts{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.post{
+
+    flex-grow: inherit;
+
+}
+
+.post-body{
+
+    height: 200px;
+
+}
+
+.post-container{
+
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.post-pic{
+    
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    
+}
+
+/*
+  ____                 _      _                        ____   ____    ____  
+ |  _ \    ___   ___  | | __ | |_    ___    _ __      / ___| / ___|  / ___| 
+ | | | |  / _ \ / __| | |/ / | __|  / _ \  | '_ \    | |     \___ \  \___ \ 
+ | |_| | |  __/ \__ \ |   <  | |_  | (_) | | |_) |   | |___   ___) |  ___) |
+ |____/   \___| |___/ |_|\_\  \__|  \___/  | .__/     \____| |____/  |____/ 
+                                           |_|                              
+*/
+
+@media only screen and (min-width: 999px) {
+
+    .posts{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .post{
+
+        max-width: 800px;
+        width: 100%;
+        flex-grow: inherit;
+        flex-wrap: wrap;
+
+    }
+    
+    /* This was not specified in the instructions, but I needed it cuz I kept getting an X on the javascript for post pic. */
+    .post-pic{
+        
+        width: 100%;
+        max-width: 200px;
+    }
+
+}
+
+/*
+  _____           _       _          _        ____   ____    ____  
+ |_   _|   __ _  | |__   | |   ___  | |_     / ___| / ___|  / ___| 
+   | |    / _` | | '_ \  | |  / _ \ | __|   | |     \___ \  \___ \ 
+   | |   | (_| | | |_) | | | |  __/ | |_    | |___   ___) |  ___) |
+   |_|    \__,_| |_.__/  |_|  \___|  \__|    \____| |____/  |____/ 
+*/
+
+@media only screen and (min-width: 400px) and (max-width: 998px) {
+
+    header {
+
+        justify-content: center;
+
+    }
+
+    .posts{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .post-container{
+
+        flex-direction: column;
+
+    }
+
+    .post{
+
+        flex: 50%;
+
+    }
+
+    .post-pic{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+
+
+/*
+  __  __           _       _   _             ____   ____    ____  
+ |  \/  |   ___   | |__   (_) | |   ___     / ___| / ___|  / ___| 
+ | |\/| |  / _ \  | '_ \  | | | |  / _ \   | |     \___ \  \___ \ 
+ | |  | | | (_) | | |_) | | | | | |  __/   | |___   ___) |  ___) |
+ |_|  |_|  \___/  |_.__/  |_| |_|  \___|    \____| |____/  |____/ 
+*/
+
+@media only screen and (max-width: 399px){
+
+    header{
+
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .logo{
+
+        border-radius: 50%;
+
+    }
+
+    .posts{
+
+        flex-basis: auto;
+        flex-direction: column;
+
+    }
+
+    .post-container{
+
+        flex-direction: column;
+
+    }
+
+    .post-pic{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+}
